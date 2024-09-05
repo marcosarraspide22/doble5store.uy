@@ -1,0 +1,88 @@
+footer{
+    background-color: rgb(74, 163, 223);
+    justify-content: space-between;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 220px 220px;
+    grid-template-areas:
+    "redes ustedes mapa"
+    "suscripcion ustedes mapa";
+    .redes{
+        h3{
+            font-family: "Arsenal SC", sans-serif;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+
+        }
+        a{
+            img{
+                width: 50px;
+                height: 50px;
+                margin: 10px;
+
+        }
+
+        }
+    }
+    .ustedes{
+        h3{
+            font-family: "Arsenal SC", sans-serif;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+
+        }
+        img{
+            height: 400px;
+            margin: 10px;
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            border-radius: 15px 15px 15px 15px
+
+        }
+    .mapa{
+        display: column;
+        justify-content: center;
+        align-items: center;
+        
+        h3{
+            font-family: "Arsenal SC", sans-serif;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+
+        }
+        iframe{
+            height: 250;
+            width: 400;
+            padding: 10px;
+
+        }
+        p{
+            font-family: "Arsenal SC", sans-serif;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+
+        }
+    .suscripcion{
+        h3{
+            font-family: "Arsenal SC", sans-serif;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+
+        }
+        label{
+            font-family: "Arsenal SC", sans-serif;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+
+        }
+        p{
+            font-family: "Arsenal SC", sans-serif;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+        }
+    }
+    }
+    }
+}

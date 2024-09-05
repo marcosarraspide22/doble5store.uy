@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Space+Grotesk:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Space+Grotesk:wght@300..700&display=swap");
+/*! ---RESET---*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #0f91e7; }
+  header .Logo img {
+    height: 90px;
+    margin-left: 20px; }
+  header nav ul {
+    list-style: none;
+    font-family: "Arsenal SC", sans-serif;
+    text-align: right;
+    font-size: 25px;
+    display: flex; }
+    header nav ul li {
+      display: inline-block;
+      padding: 40px; }
+      header nav ul li a {
+        color: white;
+        text-decoration: none;
+        background-color: black;
+        border-radius: 0px 7px 0 7px;
+        padding: 2px 7px 2px 7px;
+        transition: 0.7s; }
+        header nav ul li a:hover {
+          background-color: white;
+          color: #0f91e7; }
+
+/*INDEX*/
+.hero {
+  width: 100%;
+  height: calc(100vh - 114px);
+  background-image: url(../img/BannerLS.png);
+  background-size: 1500px;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .hero h1 {
+    color: white;
+    text-align: center;
+    font-family: "Arsenal SC", sans-serif;
+    font-size: 50px;
+    display: flex; }
+  .hero p {
+    color: white;
+    text-align: center; }
+
+main section h3 {
+  font-family: "Arsenal SC", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  background: white;
+  color: #0f91e7; }
+
+main h2 {
+  font-family: "Arsenal SC", sans-serif;
+  font-size: 40px;
+  color: white;
+  background-color: #0f91e7;
+  padding: 10px; }
+
+main p {
+  font-family: "Arsenal SC", sans-serif;
+  font-size: 28px;
+  text-align: center;
+  color: black; }
+
+main h4 {
+  font-family: "Arsenal SC", sans-serif;
+  font-size: 25px;
+  margin-bottom: 10px; }
+
+main .masvendido {
+  background-color: #0f91e7;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  main .masvendido div {
+    width: 225px;
+    height: 420px;
+    border: 2px solid gray;
+    margin: 20px;
+    text-align: center;
+    border-radius: 15px;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1s; }
+    main .masvendido div:hover {
+      transform: scale(1.08);
+      -webkit-box-shadow: 18px 17px 57px -1px rgba(0, 0, 0, 0.73);
+      -moz-box-shadow: 18px 17px 57px -1px rgba(0, 0, 0, 0.73);
+      box-shadow: 18px 17px 57px -1px rgba(0, 0, 0, 0.73); }
+    main .masvendido div img {
+      width: 100%;
+      border-radius: 15px 15px 0 0; }
+    main .masvendido div h4 {
+      font-family: "Arsenal SC", sans-serif;
+      font-size: 25px;
+      margin-bottom: 10px; }
+    main .masvendido div a {
+      background-color: #0f91e7;
+      color: black;
+      padding: 2px 7px 2px 7px;
+      font-family: "Arsenal SC", sans-serif;
+      font-size: 20px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      transition: 1s; }
+      main .masvendido div a:hover {
+        background-color: black;
+        color: #0f91e7;
+        transform: scale(1.2); }
+      main .masvendido div a:active {
+        background-color: white; }
+
+main .contactwpp {
+  position: fixed;
+  bottom: 50px;
+  right: 50px; }
+  main .contactwpp a img {
+    width: 70px;
+    height: 70px; }
+
+footer {
+  background-color: #4aa3df;
+  justify-content: space-between;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 220px 220px;
+  grid-template-areas: "redes ustedes mapa" "suscripcion ustedes mapa"; }
+  footer .redes h3 {
+    font-family: "Arsenal SC", sans-serif;
+    font-size: 20px;
+    color: white; }
+  footer .redes a img {
+    width: 50px;
+    height: 50px;
+    margin: 10px; }
+  footer .ustedes h3 {
+    font-family: "Arsenal SC", sans-serif;
+    font-size: 20px;
+    color: white; }
+  footer .ustedes img {
+    height: 400px;
+    margin: 10px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    border-radius: 15px 15px 15px 15px; }
+  footer .ustedes .mapa {
+    display: column;
+    justify-content: center;
+    align-items: center; }
+    footer .ustedes .mapa h3 {
+      font-family: "Arsenal SC", sans-serif;
+      font-size: 20px;
+      color: white; }
+    footer .ustedes .mapa iframe {
+      height: 250;
+      width: 400;
+      padding: 10px; }
+    footer .ustedes .mapa p {
+      font-family: "Arsenal SC", sans-serif;
+      font-size: 20px;
+      color: white; }
+    footer .ustedes .mapa .suscripcion h3 {
+      font-family: "Arsenal SC", sans-serif;
+      font-size: 20px;
+      color: white; }
+    footer .ustedes .mapa .suscripcion label {
+      font-family: "Arsenal SC", sans-serif;
+      font-size: 20px;
+      color: white; }
+    footer .ustedes .mapa .suscripcion p {
+      font-family: "Arsenal SC", sans-serif;
+      font-size: 20px;
+      color: white; }
+
+@media screen and (max-width: 920px) {
+  header {
+    flex-direction: column; }
+  .hero h1 {
+    font-size: 35px; }
+  .hero p {
+    font-size: 20px; }
+  .masvendido div {
+    margin: 10px; }
+  header .Logo img {
+    height: 220px;
+    padding: 20px; }
+  .mapa iframe {
+    width: 300px; }
+  .ustedes img {
+    height: 300px; } }
+
+@media screen and (max-width: 820px) {
+  header {
+    flex-direction: column; }
+  .masvendido div {
+    height: 360px; }
+  .mapa iframe {
+    height: 200px;
+    width: 250px;
+    justify-content: center;
+    align-items: center; }
+  .ustedes img {
+    height: 250px; } }
+
+@media screen and (max-width: 763px) {
+  header nav ul li {
+    padding: 10px; }
+  .masvendido div {
+    height: 305px; }
+  .masvendido h4 {
+    font-size: 20px; }
+  main .contactwpp a img {
+    width: 40px;
+    height: 40px; } }
+
+@media screen and (max-width: 630px) {
+  .masvendido div {
+    height: 250px; }
+  .masvendido h4 {
+    font-size: 15px; }
+  footer {
+    grid-template-columns: 1fr 1fr; }
+  .ustedes {
+    display: none; } }
+
+@media screen and (max-width: 550px) {
+  .Logo img {
+    height: 70px;
+    align-items: center; }
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    margin: 0px; }
+  .masvendido {
+    flex-direction: column;
+    align-items: center; }
+  .masvendido div {
+    height: 360px;
+    margin: 20px; } }
+
+@media screen and (max-width: 433px) {
+  footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "redes" "mapa" "ustedes";
+    align-items: center; } }
