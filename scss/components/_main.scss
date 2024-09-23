@@ -54,25 +54,29 @@ main{
 
     }
 
-    .sobrenosotros{
-        width: 100%;
-        height: 500px;
-        background-image: url(../img/BannerLS.png)
-        background-position: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        h3{
+    .sobrenosotros {
+            width: 100%;
+            height: 500px;
+            background-image: url(../img/FondoSN.jpg);
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sobrenosotros h2 {
             color: white;
             text-align: center;
             font-family: "Arsenal SC", sans-serif;
-            font-size: 50px;
+            font-size: 60px;
             display: flex;
         }
-        p{
+
+        .sobrenosotros p {
             color: white;
-            text-align: center;
+            text-align: left;
+            font-size: 45px;
         }
 
     .masvendido{
@@ -142,6 +146,5 @@ box-shadow: 18px 17px 57px -1px rgba(0,0,0,0.73);
                 height: 70px;
             }
         }
-
     }
 }
