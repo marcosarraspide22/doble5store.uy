@@ -54,6 +54,27 @@ main{
 
     }
 
+    .sobrenosotros{
+        width: 100%;
+        height: 500px;
+        background-image: url(../img/BannerLS.png)
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h3{
+            color: white;
+            text-align: center;
+            font-family: "Arsenal SC", sans-serif;
+            font-size: 50px;
+            display: flex;
+        }
+        p{
+            color: white;
+            text-align: center;
+        }
+
     .masvendido{
         background-color: rgb(15, 145, 231);
         display: flex;
