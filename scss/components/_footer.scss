@@ -1,45 +1,47 @@
+@import "./base/funcionalidades";
+
 footer {
     background-color: rgb(74, 163, 223);
     justify-content: space-between;
-    padding: 10px;
+    padding: $padding-general;
     display: grid;
+    height: auto;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px 200px;
+    grid-template-rows: 220px 220px;
     grid-template-areas:
         "redes ustedes mapa"
         "suscripcion ustedes mapa";
 
-        .redes {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-        
-            h3 {
-                font-family: "Arsenal SC", sans-serif;
-                font-size: 20px;
-                color: rgb(255, 255, 255);
-                text-align: center; 
-            }
-        
-            .logosredes {
-                display: flex; 
-                justify-content: center;
-        
-                a {
-                    margin: 0 5px; 
-        
-                    img {
-                        width: 50px; 
-                        height: auto;
-                        max-height: 50px;
-                        max-width: 50px;
-                        object-fit: contain;
-                        margin: 20px;
-                    }
+    .redes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        h3 {font-family: "Arsenal SC", sans-serif;
+            font-size: 25px;
+            color: white;
+            padding: 10px;;
+        }
+
+        .logosredes {
+            display: flex; 
+            justify-content: center;
+
+            a {
+                margin: 0 5px; 
+
+                img {
+                    width: 50px; 
+                    height: auto;
+                    max-height: 50px;
+                    max-width: 50px;
+                    object-fit: contain;
+                    margin: 20px;
                 }
             }
         }
+    }
 
     .ustedes {
         display: flex;
@@ -47,10 +49,10 @@ footer {
         justify-content: center;     
         align-items: center;
 
-        h3 {
-            font-family: "Arsenal SC", sans-serif;
-            font-size: 20px;
-            color: rgb(255, 255, 255);
+        h3 {font-family: "Arsenal SC", sans-serif;
+            font-size: 25px;
+            color: white;
+            padding: 10px;;
         }
         img {
             height: 350px;
@@ -58,7 +60,7 @@ footer {
             display: flex;
             justify-items: center;
             align-items: center;
-            border-radius: 15px;
+            @include borde-redondeado(15px);
         }
     }
 
@@ -68,11 +70,10 @@ footer {
         justify-content: center;     
         align-items: center;
 
-        h3 {
-            font-family: "Arsenal SC", sans-serif;
-            font-size: 20px;
-            color: rgb(255, 255, 255);
-            text-align: left;
+        h3 {font-family: "Arsenal SC", sans-serif;
+            font-size: 25px;
+            color: white;
+            padding: 10px;;
         }
         iframe {
             height: 250px;
@@ -91,25 +92,24 @@ footer {
         flex-direction: column;
         justify-content: center;     
         align-items: center;
-        h3 {
-            font-family: "Arsenal SC", sans-serif;
-            font-size: 20px;
-            color: rgb(255, 255, 255);
+
+        h3 {font-family: "Arsenal SC", sans-serif;
+            font-size: 25px;
+            color: white;
+            padding: 10px;;
         }
         label {
+            p {
             font-family: "Arsenal SC", sans-serif;
-            font-size: 20px;
+            font-size: 15px;
             color: rgb(255, 255, 255);
+        }
             padding: 10px;
         }
         input {
             padding: 2px;
             margin: 5px;
         }
-        p {
-            font-family: "Arsenal SC", sans-serif;
-            font-size: 20px;
-            color: rgb(255, 255, 255);
-        }
+        
     }
 }
