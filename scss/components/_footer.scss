@@ -21,7 +21,17 @@ footer {
         h3 {font-family: "Arsenal SC", sans-serif;
             font-size: 25px;
             color: white;
-            padding: 10px;;
+            padding: 10px;
+        }
+        p {
+            max-width: 100%;
+            font-size: 20px;
+            line-height: 1.5;
+            text-align: center;
+            margin: 0 auto;
+            font-family: "Arsenal SC", sans-serif;
+            color: rgb(255, 255, 255);
+            white-space: nowrap;
         }
 
         .logosredes {
@@ -90,26 +100,55 @@ footer {
     .suscripcion {
         display: flex;
         flex-direction: column;
-        justify-content: center;     
+        justify-content: center;
         align-items: center;
-
-        h3 {font-family: "Arsenal SC", sans-serif;
+    
+        h3 {
+            font-family: "Arsenal SC", sans-serif;
             font-size: 25px;
             color: white;
-            padding: 10px;;
-        }
-        label {
-            p {
-            font-family: "Arsenal SC", sans-serif;
-            font-size: 15px;
-            color: rgb(255, 255, 255);
-        }
             padding: 10px;
         }
-        input {
-            padding: 2px;
-            margin: 5px;
+    
+        p {
+            max-width: 100%;
+            font-size: 20px;
+            line-height: 1.5;
+            text-align: center;
+            margin: 0 auto;
+            font-family: "Arsenal SC", sans-serif;
+            color: rgb(255, 255, 255);
+            white-space: nowrap;
         }
-        
+    
+        button {
+            margin-top: 15px;
+        }
+    }
+    
+    .modal-content {
+        max-width: 400px;
+        margin: auto;
+    }
+    
+    .modal-title {
+        font-family: "Arsenal SC", sans-serif;
+        font-size: 25px;
+        color: black;
+    }
+    
+    .form-label {
+        font-family: "Arsenal SC", sans-serif;
+        font-size: 15px;
+        color: black;
+    }
+    
+    .modal-body input {
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+    
+    button[type="submit"] {
+        margin-top: 20px;
     }
 }

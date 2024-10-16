@@ -291,6 +291,15 @@ footer {
       font-size: 25px;
       color: white;
       padding: 10px; }
+    footer .redes p {
+      max-width: 100%;
+      font-size: 20px;
+      line-height: 1.5;
+      text-align: center;
+      margin: 0 auto;
+      font-family: "Arsenal SC", sans-serif;
+      color: white;
+      white-space: nowrap; }
     footer .redes .logosredes {
       display: flex;
       justify-content: center; }
@@ -348,15 +357,33 @@ footer {
       font-size: 25px;
       color: white;
       padding: 10px; }
-    footer .suscripcion label {
-      padding: 10px; }
-      footer .suscripcion label p {
-        font-family: "Arsenal SC", sans-serif;
-        font-size: 15px;
-        color: white; }
-    footer .suscripcion input {
-      padding: 2px;
-      margin: 5px; }
+    footer .suscripcion p {
+      max-width: 100%;
+      font-size: 20px;
+      line-height: 1.5;
+      text-align: center;
+      margin: 0 auto;
+      font-family: "Arsenal SC", sans-serif;
+      color: white;
+      white-space: nowrap; }
+    footer .suscripcion button {
+      margin-top: 15px; }
+  footer .modal-content {
+    max-width: 400px;
+    margin: auto; }
+  footer .modal-title {
+    font-family: "Arsenal SC", sans-serif;
+    font-size: 25px;
+    color: black; }
+  footer .form-label {
+    font-family: "Arsenal SC", sans-serif;
+    font-size: 15px;
+    color: black; }
+  footer .modal-body input {
+    padding: 5px;
+    margin-bottom: 10px; }
+  footer button[type="submit"] {
+    margin-top: 20px; }
 
 @media screen and (max-width: 1050px) {
   .sobrenosotros p {

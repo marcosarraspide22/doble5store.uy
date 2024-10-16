@@ -18,6 +18,7 @@
     <!--ANIMACIONES-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>DOBLE 5 // Indumentaria deportiva</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
@@ -104,8 +105,9 @@
     <footer>
         <section>
             <div class="redes">
-                <h3>Seguinos en nuestras redes sociales</h3>
-                <div class="logosredes"> <!-- Contenedor para las imágenes -->
+                <h3>Seguinos</h3>
+                <p>en nuestras redes sociales</p>
+                <div class="logosredes"> 
                     <a href="https://www.instagram.com/doble5store.uy/" target="_blank">
                         <img src="./img/instagram.png" alt="Instagram">
                     </a>
@@ -134,25 +136,51 @@
             </div>
         </section>
 
-        <section>
-            <div class="suscripcion">
-                <h3>Suscribite</h3>
-                <p>Y recibí todas nuestras novedades!</p>
-                <div>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido">
+        <footer>
+            
+            <section>
+                <div class="suscripcion">
+                    <h3>Suscribite</h3>
+                    <p>¡Y recibí nuestras nuestras promociones,</p>
+                    <p>beneficios y novedades!</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#subscriptionModal">
+                        Suscribirse ahora
+                    </button>
                 </div>
-                <div>
-                    <label for="mail">Correo electronico</label>
-                    <input type="email" placeholder="Correo electronico">
-                </div>
-                <div>
-                    <input type="submit">
+            </section>
+            
+            
+            <div class="modal fade" id="subscriptionModal" tabindex="-1" aria-labelledby="subscriptionModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="subscriptionModalLabel">Suscribite</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="subscriptionForm">
+                                <div class="mb-3">
+                                    <label for="modalName" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="modalName" placeholder="Nombre y apellido" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="modalEmail" class="form-label">Correo electrónico</label>
+                                    <input type="email" class="form-control" id="modalEmail" placeholder="Correo electrónico" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="modalPhone" class="form-label">Número de teléfono</label>
+                                    <input type="tel" class="form-control" id="modalPhone" placeholder="Número de teléfono" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Suscribirse</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-    </footer>
+        </footer>
+        
 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
